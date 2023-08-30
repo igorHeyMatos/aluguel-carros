@@ -4,18 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aluguel de Carros</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&family=Poppins:ital,wght@0,400;0,500;0,700;1,200;1,400;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Aluguel de Carros</h1>
+    <header>
+        <h1>Aluguel de Carros</h1>
+    </header>
 
-    <input type="number" id="km_percorrido" placeholder="Km percorridos">
+    <main>
+        <div id="imagem1"><img src="carro1.png" alt=""></div>
+        <div id="imagem2"><img src="carro2.png" alt=""></div>
+        
+    </main>
 
-    <input type="number" id="qnt_dia" placeholder="Quantidade de dias">
+    <aside>
+        <div class="selecao_carro">
+            <h3 class="title_selec">Selecione o carro</h3>
+            <div class="opts">
+                <input type="radio" name="carro" id="carro1" checked>
+                <input type="radio" name="carro" id="carro2">
+            </div>
+        </div>
+        <div class="content">
+            <input type="number" class="inputs" id="km_percorrido" placeholder="Km percorridos">
 
-    <input type="button" value="Calcular" onclick="calcular()">
+            <input type="number" class="inputs" id="qnt_dia" placeholder="Quantidade de dias">
 
-    <div id="res"></div>
+            <input type="button" value="Calcular" id="btn" onclick="calcular()">
+        </div>
+        
+        <div class="result">
+            <h2 id="res"></h2>
+        </div>
+        
+    </aside>
 
+    <section>
+        <div class="desc1">
+            <h3>Descrição Carro 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum animi iste minima nulla excepturi quod molestiae vero, laboriosam placeat aspernatur quasi ipsam cupiditate adipisci blanditiis, sed magni a. Facere, fugiat?</p>
+        </div>
+        <div class="desc2">
+            <h3>Descrição Carro 2</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum vitae ut est. Reiciendis aliquam accusamus voluptas, nemo cum enim, ducimus voluptate dignissimos perspiciatis veniam nobis. Eaque nisi repellendus iure voluptates.</p>
+        </div>
+        
+    </section>
+
+    <footer>
+        &copy;igorHeyMatos
+    </footer>
     <script src="scripts.js"></script>
+    <script src="jsa.js"></script>
 </body>
 </html>
