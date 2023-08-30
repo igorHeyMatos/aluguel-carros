@@ -8,29 +8,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&family=Poppins:ital,wght@0,400;0,500;0,700;1,200;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="car-line.svg" type="image/x-icon">
 </head>
 <body>
     <header>
-        <h1>Aluguel de Carros</h1>
+        <div class="cabecalho">
+            <h1 id="titulo">Aluguel de Carros</h1>
+        </div>
+        
+        <div class="menu-cabecalho">
+            <a class="links" href="#">Sobre</a>
+            <a class="links" href="#">Contato</a>
+            <a class="links" href="#">Suporte</a>
+            <a class="links" href="#">Simular</a>
+        </div>
+        
     </header>
 
     <main>
         <div id="imagem1"><img src="carro1.png" alt=""></div>
         <div id="imagem2"><img src="carro2.png" alt=""></div>
-        
     </main>
 
     <aside>
         <div class="selecao_carro">
-            <h3 class="title_selec">Selecione o carro</h3>
+            <h3 class="title_selec">Selecione um carro para a simulação</h3>
             <div class="opts">
-                <input type="radio" name="carro" id="carro1" checked>
-                <input type="radio" name="carro" id="carro2">
+                <input type="radio" name="carro" id="carro1" checked><label for="carro1">Volvo XC 40</label>
+                <input type="radio" name="carro" id="carro2"><label for="carro2">Caoa Cherry Celer</label>
             </div>
         </div>
         <div class="content">
+            <label for="km_percorrido" class="labels">Digite os kms percorridos:</label>
             <input type="number" class="inputs" id="km_percorrido" placeholder="Km percorridos">
 
+            <label for="qnt_dia" class="labels">Digite a quantidade de dias:</label>
             <input type="number" class="inputs" id="qnt_dia" placeholder="Quantidade de dias">
 
             <input type="button" value="Calcular" id="btn" onclick="calcular()">
@@ -44,12 +56,12 @@
 
     <section>
         <div class="desc1">
-            <h3>Descrição Carro 1</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum animi iste minima nulla excepturi quod molestiae vero, laboriosam placeat aspernatur quasi ipsam cupiditate adipisci blanditiis, sed magni a. Facere, fugiat?</p>
+            <h3>Descrição Volvo XC40</h3>
+        <p>O XC40 Recharge não o obriga a escolher entre potência e condução responsável. Sente-se no seu lugar, comece a viagem e desfrute do conforto da condução com um pedal e da aceleração suave sem emissões de escape.Faça de cada viagem muito mais do que ir de A para B. No XC40 Recharge, o seu compromisso com um futuro mais sustentável nunca soube tão bem.</p>
         </div>
         <div class="desc2">
-            <h3>Descrição Carro 2</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum vitae ut est. Reiciendis aliquam accusamus voluptas, nemo cum enim, ducimus voluptate dignissimos perspiciatis veniam nobis. Eaque nisi repellendus iure voluptates.</p>
+            <h3>Descrição Caoa Cherry Celer</h3>
+        <p>Sob o capô, a emoção aguarda. O motor potente e eficiente do Caoa Cherry Celer oferece uma aceleração suave e uma performance ágil, tornando cada viagem uma aventura emocionante. Sinta o poder na ponta dos dedos enquanto você domina as estradas com confiança.</p>
         </div>
         
     </section>
