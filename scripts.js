@@ -12,7 +12,7 @@ function calcular(){
         valor_total = valor_dia + valor_km;
     }
     
-    res.innerHTML = `${valor_total}`;
+    res.innerHTML = `<h2>Valor final: </h2>R$ ${valor_total}`;
 }
 
 let carro1 = document.getElementById("carro1");

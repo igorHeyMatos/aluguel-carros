@@ -12,7 +12,7 @@ body {
 
 header {
     grid-row: 1 / 2;
-    grid-column: 1 / 3;
+    grid-column: 1 / 4;
     background: blueviolet;
     color: #fff;
     min-height: 100px;
@@ -41,7 +41,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50vw;
+
 }
 
 #imagem1 {
@@ -56,13 +56,12 @@ main {
 
 aside {
     grid-row: 3 / 4;
-    grid-column: 2 / 3;
+    grid-column: 2 / 4;
     height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 50vw;
 }
 
 .selecao_carro {
@@ -130,27 +129,70 @@ aside {
     text-align: center;
 }
 
-section {
-    grid-column: 1 / 3;
+.cont2{
+    grid-column: 1 / 2;
     grid-row: 4 / 5;
     min-height: 100px;
     border: 1px solid blueviolet;
     display: grid;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cont3{
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
+    min-height: 100px;
+    border: 1px solid blueviolet;
+    display: grid;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .desc1 {
     grid-column: 1 / 2;
     grid-row: 1 / 1;
+    width: 30vw;
+    min-height: 400px;
 }
 
 .desc2 {
-    grid-column: 2 / 3;
-    grid-row: 1 / 1;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 30vw;
+    min-height: 400px;
+}
+
+.title-carros {
+    padding: 5px;
+}
+
+.desc3 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    width: 25vw;
+    min-height: 400px;
+    text-align: center;
+}
+
+.desc4 {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    width: 25vw;
+    min-height: 400px;
+    text-align: center;
+}
+
+.fotos {
+    width: 400px;
+    height: 300px;
 }
 
 footer {
     grid-row: 5 / 6;
-    grid-column: 1 / 3;
+    grid-column: 1 / 4;
     background: blueviolet;
     color: #fff;
     text-align: center;
